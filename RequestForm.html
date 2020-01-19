@@ -2,11 +2,11 @@
 <html>
 <body>
 
-<div style="width:200px;height:210px;border:1px solid #000;">
+<div style="width:200px;height:230px;border:1px solid #000;">
     <form action="/action_page.php">
     Name: <input type="text" name="Name" value="HackDavis"><br>
     Location: <input type="text" name="Location" value="Davis"><br>
-
+    Help: 
     <!-- Toggle Switch-->
     <div class="onoffswitch">
         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
@@ -43,7 +43,7 @@
         background-color: #34A7C1; color: #FFFFFF;
     }
     .onoffswitch-inner:after {
-        content: "RECEIVE";
+        content: "GET";
         padding-right: 10px;
         background-color: #EEEEEE; color: #999999;
         text-align: right;
@@ -64,7 +64,7 @@
     }
     </style>
     <!-- End of Toggle Switch-->
-    
+
     Categories:
 
         <!-- This is for the drop down menu -->
@@ -138,6 +138,7 @@
     Message: 
     <br>
     <textarea rows="4" cols="35">
+
     </textarea>
 
     <input type="submit" value="Submit">
