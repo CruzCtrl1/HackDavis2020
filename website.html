@@ -32,7 +32,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://i.ya-webdesign.com/images/australia-transparent-outline.gif');
+  background-image: url('https://wallpaperplay.com/walls/full/b/a/2/14708.jpg');
   min-height: 100%;
 }
 
@@ -98,25 +98,157 @@ body {
 .fourth-text {
   font-size: 3.4rem;
   position: absolute;
-  top: 10.5rem;
-  left: 10%;
+  bottom:280px;
+  left: 600px;
   opacity: 0;
-  color: #000000;
+  color: #ffffff;
   animation-name: fadeInOut;
-  animation-delay: 8.5s;
+  animation-delay: 1s;
   animation-duration: 9s;
 }
-
-.fifth-text {
-  font-size: 5rem;
+.city1 {
+  font-size: 3.4rem;
   position: absolute;
-  left: 5%;
-  bottom: 25%;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+.city2 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 11s;
+  animation-duration: 9s;
+}
+.city3 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 22s;
+  animation-duration: 9s;
+}
+.city4 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 33s;
+  animation-duration: 9s;
+}
+.city5 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 44s;
+  animation-duration: 9s;
+}
+.city6 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 600px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 55s;
+  animation-duration: 9s;
+}
+.city7 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 600px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 66s;
+  animation-duration: 9s;
+}
+.fire1 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom: 300px;
+  left: 500px;
   opacity: 0;
   color: #000000;
   animation-name: fadeInOut;
-  animation-delay: 20s;
-  animation-duration: 9s;
+  animation-delay: 1s;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+}
+.fire2 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 100px;
+  left: 990px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire3 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 80px;
+  left: 950px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire4 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 50px;
+  left: 980px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+
+.fire5 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 50px;
+  left: 970px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire6{
+  font-size: 3.4rem;
+  position: absolute;
+  top: 1rem;
+  left: 10px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
 }
 
 </style>
@@ -214,8 +346,17 @@ body {
 </head>
 <body>
 
- <div class="fourth-text"><p class = "small">I will not move, just fade</p></div>
- <div class="fifth-text">jfc</div>
+
+<div class="city1"><p class = "small">Sydney</p></div>
+<div class="city2"><p class = "small">Melbourne</p></div>
+<div class="city3"><p class = "small">Sunbury</p></div>
+<div class="city4"><p class = "small">Port Macquerie</p></div>
+<div class="city5"><p class = "small">Mallacoota</p></div>
+
+<div class="fire1"><img src="https://im6.ezgif.com/tmp/ezgif-6-ffab5206f78e.gif"></div>
+
+
+
 <button class="open-button" onclick="openForm()">Open Form</button>
 
 <div class="form-popup" id="myForm">
@@ -232,6 +373,8 @@ body {
     <button type="submit" class="btn" onclick = "close()">Login</button>
   </form>
 </div>
+<div id = "firePicture"> 
+</div>
 
 <script>
 function openForm() {
@@ -241,6 +384,7 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
 
 </script>
 
