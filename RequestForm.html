@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="width:200px;height:240px;border:1px solid #000;">
+    <form action="/action_page.php">
+    Name: <input type="text" name="Name" value="HackDavis"><br>
+    Location: <input type="text" name="Location" value="Davis"><br> <br>
+
+    <!--Slider start-->
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="Give"></span>
+            <span class="Receive"></span>
+        </label>
+    </div>
+
+    <style>
+    .onoffswitch {
+        position: relative; width: 64px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 20px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 13px; padding: 0; line-height: 13px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #34A7C1; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #EEEEEE; color: #999999;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 18px; margin: -2.5px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 47px;
+        border: 2px solid #999999; border-radius: 20px;
+        transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }
+    </style>
+
+    <!--Slider end-->
+    Categories:
+
+        <!-- This is for the drop down menu -->
+        <form>
+            <SELECT NAME="options"
+            onChange="this.form.event_name.value=this.options[this.selectedIndex].value">
+                <OPTION VALUE = "Clothing">Clothing
+                <OPTION VALUE = "Food">Food
+                <OPTION VALUE = "Shelter">Shelter
+                <OPTION VALUE = "Volunteer">Volunteer
+                <OPTION VALUE = "Transport">Transport
+        </SELECT>
+        </form>
+        <!--End of dropdown-->
+
+    Time: 
+        <form>
+            <SELECT NAME="options"
+            onChange="this.form.event_name.value=this.options[this.selectedIndex].value">
+                <OPTION VALUE = "12 AM ">12 AM
+                <OPTION VALUE = "12:30 AM ">12:30 AM
+                <OPTION VALUE = "1 AM">1 AM
+                <OPTION VALUE = "1:30 AM">1:30 AM
+                <OPTION VALUE = "2 AM">2 AM
+                <OPTION VALUE = "2:30 AM">2:30 AM
+                <OPTION VALUE = "3 AM">3 AM
+                <OPTION VALUE = "3:30 AM">3:30 AM
+                <OPTION VALUE = "4 AM">4 AM
+                <OPTION VALUE = "4:30 AM">4:30 AM
+                <OPTION VALUE = "5 AM ">5 AM
+                <OPTION VALUE = "5:30 AM ">5:30 AM
+                <OPTION VALUE = "6 AM">6 AM
+                <OPTION VALUE = "6:30 AM">6:30 AM
+                <OPTION VALUE = "7 AM">7 AM
+                <OPTION VALUE = "7:30 AM">7:30 AM
+                <OPTION VALUE = "8 AM">8 AM
+                <OPTION VALUE = "8:30 AM">8:30 AM
+                <OPTION VALUE = "9 AM">9 AM
+                <OPTION VALUE = "9:30 AM">9:30 AM
+                <OPTION VALUE = "10 AM ">10 AM
+                <OPTION VALUE = "10:30 AM ">10:30 AM
+                <OPTION VALUE = "11 AM">11 AM
+                <OPTION VALUE = "11:30 AM">11:30 AM
+                <OPTION VALUE = "12 PM">12 PM
+                <OPTION VALUE = "12:30 PM">12:30 PM
+                <OPTION VALUE = "1 PM">1 PM
+                <OPTION VALUE = "1:30 PM">1:30 PM
+                <OPTION VALUE = "2 PM">2 PM
+                <OPTION VALUE = "2:30 PM">2:30 PM
+                <OPTION VALUE = "3 PM ">3 PM
+                <OPTION VALUE = "3:30 PM ">3:30 PM
+                <OPTION VALUE = "4 PM">4 PM
+                <OPTION VALUE = "4:30 PM">4:30 PM
+                <OPTION VALUE = "5 PM">5 PM
+                <OPTION VALUE = "5:30 PM">5:30 PM
+                <OPTION VALUE = "6 PM">6 PM
+                <OPTION VALUE = "6:30 PM">6:30 PM
+                <OPTION VALUE = "7 PM">7 PM
+                <OPTION VALUE = "7:30 PM">7:30 PM
+                <OPTION VALUE = "8 PM">8 PM
+                <OPTION VALUE = "8:30 PM">8:30 PM
+                <OPTION VALUE = "9 PM">9 PM
+                <OPTION VALUE = "9:30 PM">9:30 PM
+                <OPTION VALUE = "10 PM">10 PM
+                <OPTION VALUE = "10:30  PM">10:30 PM
+                <OPTION VALUE = "11 PM">11 PM
+                <OPTION VALUE = "11:30 PM">11:30 PM
+        </SELECT>
+        </form>
+
+    Message: 
+    <br>
+    <textarea rows="4" cols="20">
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+    </textarea>
+    </form>
+    
+    <br>
+<!--
+    <p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
+ -->
+    
+    <br>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
