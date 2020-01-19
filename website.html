@@ -10,13 +10,16 @@
 
 
 <style>
-
+p.small {
+  font-variant: small-caps;
+}
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+  font-size: 65;
 }
 
 /* Create a Parallax Effect */
@@ -29,7 +32,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://wallpaperaccess.com/full/1109594.jpg');
+  background-image: url('https://wallpaperplay.com/walls/full/b/a/2/14708.jpg');
   min-height: 100%;
 }
 
@@ -55,7 +58,201 @@ body, html {
     min-height: 1000px;
   }
 }
+
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 600px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+.city1 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+.city2 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 11s;
+  animation-duration: 9s;
+}
+.city3 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 22s;
+  animation-duration: 9s;
+}
+.city4 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 33s;
+  animation-duration: 9s;
+}
+.city5 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 670px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 44s;
+  animation-duration: 9s;
+}
+.city6 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 600px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 55s;
+  animation-duration: 9s;
+}
+.city7 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom:280px;
+  left: 600px;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 66s;
+  animation-duration: 9s;
+}
+.fire1 {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom: 300px;
+  left: 500px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+}
+.fire2 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 100px;
+  left: 990px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire3 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 80px;
+  left: 950px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire4 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 50px;
+  left: 980px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+
+.fire5 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 50px;
+  left: 970px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.fire6{
+  font-size: 3.4rem;
+  position: absolute;
+  top: 1rem;
+  left: 10px;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
 </style>
+
 <body>
 
 
@@ -75,6 +272,7 @@ body, html {
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #000000;
+  font-size: 20px;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -94,6 +292,7 @@ body, html {
   bottom: 270px;
   left: 640px;
   border: 3px solid #000000;
+  font-size:20px;
   z-index: 9;
 }
 
@@ -140,13 +339,23 @@ body, html {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
 </style>
 </head>
 <body>
 
-<b>The Caterpillar and Alice looked at each other for some time in silence:
-at last the Caterpillar took the hookah out of its mouth, and addressed
-her in a languid, sleepy voice.</b>
+
+<div class="city1"><p class = "small">Sydney</p></div>
+<div class="city2"><p class = "small">Melbourne</p></div>
+<div class="city3"><p class = "small">Sunbury</p></div>
+<div class="city4"><p class = "small">Port Macquerie</p></div>
+<div class="city5"><p class = "small">Mallacoota</p></div>
+
+<div class="fire1"><img src="https://im6.ezgif.com/tmp/ezgif-6-ffab5206f78e.gif"></div>
+
+
 
 <button class="open-button" onclick="openForm()">Open Form</button>
 
@@ -164,6 +373,8 @@ her in a languid, sleepy voice.</b>
     <button type="submit" class="btn" onclick = "close()">Login</button>
   </form>
 </div>
+<div id = "firePicture"> 
+</div>
 
 <script>
 function openForm() {
@@ -173,6 +384,7 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
 
 </script>
 
