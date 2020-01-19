@@ -2,12 +2,12 @@
 <html>
 <body>
 
-<div style="width:200px;height:240px;border:1px solid #000;">
+<div style="width:200px;height:230px;border:1px solid #000;">
     <form action="/action_page.php">
     Name: <input type="text" name="Name" value="HackDavis"><br>
     Location: <input type="text" name="Location" value="Davis"><br>
-
-    <!--Slider start-->
+    Help: 
+    <!-- Toggle Switch-->
     <div class="onoffswitch">
         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
         <label class="onoffswitch-label" for="myonoffswitch">
@@ -38,12 +38,12 @@
         box-sizing: border-box;
     }
     .onoffswitch-inner:before {
-        content: "ON";
+        content: "GIVE";
         padding-left: 10px;
         background-color: #34A7C1; color: #FFFFFF;
     }
     .onoffswitch-inner:after {
-        content: "OFF";
+        content: "GET";
         padding-right: 10px;
         background-color: #EEEEEE; color: #999999;
         text-align: right;
@@ -63,8 +63,8 @@
         right: 0px; 
     }
     </style>
+    <!-- End of Toggle Switch-->
 
-    <!--Slider end-->
     Categories:
 
         <!-- This is for the drop down menu -->
@@ -137,9 +137,11 @@
 
     Message: 
     <br>
-    <textarea rows="4" cols="20">
-        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+    <textarea rows="4" cols="35">
+
     </textarea>
+
+    <input type="submit" value="Submit">
     </form>
     
     <br>
