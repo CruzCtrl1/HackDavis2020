@@ -10,13 +10,16 @@
 
 
 <style>
-
+p.small {
+  font-variant: small-caps;
+}
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+  font-size: 65;
 }
 
 /* Create a Parallax Effect */
@@ -29,7 +32,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://wallpaperaccess.com/full/1109594.jpg');
+  background-image: url('https://i.ya-webdesign.com/images/australia-transparent-outline.gif');
   min-height: 100%;
 }
 
@@ -55,7 +58,69 @@ body, html {
     min-height: 1000px;
   }
 }
+
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+}
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #000000;
+  animation-name: fadeInOut;
+  animation-delay: 20s;
+  animation-duration: 9s;
+}
+
 </style>
+
 <body>
 
 
@@ -75,6 +140,7 @@ body, html {
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #000000;
+  font-size: 20px;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -94,6 +160,7 @@ body, html {
   bottom: 270px;
   left: 640px;
   border: 3px solid #000000;
+  font-size:20px;
   z-index: 9;
 }
 
@@ -140,14 +207,15 @@ body, html {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
 </style>
 </head>
 <body>
 
-<b>The Caterpillar and Alice looked at each other for some time in silence:
-at last the Caterpillar took the hookah out of its mouth, and addressed
-her in a languid, sleepy voice.</b>
-
+ <div class="fourth-text"><p class = "small">I will not move, just fade</p></div>
+ <div class="fifth-text">jfc</div>
 <button class="open-button" onclick="openForm()">Open Form</button>
 
 <div class="form-popup" id="myForm">
